@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ample Extrusion</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-custom {
+            background-color: #072471;
+            
+        }
+        .hero-image {
+           background-image:url('ae2.jpg');
+            height: 75vh;
+            background-size: cover;
+            background-position: center;
+            position:relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(123, 157, 205, 0.441);
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-size:100px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        
+    .navbar-custom {
+    background-color: #1f70b8;
+    height: 130px; /* Increase the height */
+    padding: 20px 0; /* Adjust padding */
+}
+
+.navbar-brand {
+    font-size: 1.8rem; /* Increase brand text size */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem; /* Increase navigation link text size */
+    padding: 10px 15px; /* Adjust padding for better spacing */
+}
+
+.navbar-toggler {
+    font-size: 1rem; /* Increase size of the toggler icon */
+}
+.about-section {
+            padding: 60px 0;
+        }
+
+        .about-section h2 {
+            font-family: 'Arial', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #003366; /* Dark blue color */
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #000406;
+        }
+
+        .read-more {
+            color: #0066cc; /* Blue color for "Read More" */
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .about-section img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .about-section {
+            padding: 60px 0;
+    
+        }
+        .about-section .content {
+            text-align: left;
+            font-size: 16px;
+        }
+        .about-section .title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .about-section img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .about-section .read-more {
+            color: #0056b3;
+            font-weight: bold;
+        }
+        .product-card {
+      background-color: #0A2A47;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+    
+    .product-card h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .product-card p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .product-card .read-more {
+      background-color: #F5B800;
+      color: #0A2A47;
+      border: none;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .product-number {
+      background-color: #F5B800;
+      color: #0A2A47;
+      font-size: 2rem;
+      font-weight: bold;
+      position: absolute;
+      top: -30px;
+      left: 20px;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .why-choose-us {
+      margin-top: 50px;
+      
+    }
+    
+    .choose-card {
+      background-color: #0A2A47;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .choose-card h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .choose-card p {
+      font-size: 1rem;
+    }
+
+    .choose-card .icon {
+      font-size: 3rem;
+      color: #F5B800;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 55px;
+    }
+
+    .choose-card a {
+      color: #F5B800;
+      text-decoration: underline;
+    }
+    .footer {
+      background-color: #0A2A47;
+      color: white;
+      padding: 40px 0;
+    }
+
+    .footer h5 {
+      color: #F5B800;
+      font-weight: bold;
+    }
+
+    .footer .footer-logo img {
+      max-width: 120px;
+      margin-bottom: 15px;
+    }
+
+    .footer p {
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .footer .quick-links ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .footer .quick-links ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer .quick-links ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer .quick-links ul li a:hover {
+      color: #F5B800;
+    }
+
+    .footer .social-icons a {
+      color: #F5B800;
+      font-size: 1.5rem;
+      margin-right: 10px;
+      text-decoration: none;
+    }
+
+    .footer .social-icons a:hover {
+      color: white;
+    }
+
+    .footer .copyright {
+      border-top: 1px solid #F5B800;
+      padding-top: 10px;
+      text-align: center;
+      margin-top: 20px;
+    }
+       
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="amplelogo.png" style="width: 260px; height:86px; margin-right:300px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Products.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="facility.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">Facility</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="technology.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">Technology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUS.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="LoginRegister.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">Register</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Login.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">Login</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-image">
+        <div class="overlay"></div>
+        <div class="hero-text">
+            <h1 style="font-size: 70px;">Welcome to <br><strong>AMPLE EXTRUSION</strong></h1>
+            <p style="font-size:40px;">Quality Is Not An Art, It Is A Habit</p>
+        </div>
+       
+    </section>
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container" >
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>About Ample Extrusion</h2>
+                    <p>
+                        <strong><span style="font-family:'Times New Roman', Times, serif;">AMPLE EXTRUSION</span></strong>, a Company incorporated in manufacturing of premium quality Aluminium profiles from the last 3 years since JUNE 2021. We operate  advanced automated aluminium manufacturing units strategically located at Lajai Nasitpar Road, Tankara, Morbi , GUJARAT.
+                    </p>
+                    <p>
+                        The infrastructure has been setup with most advanced technologically equipped machineries and 100% power back up facilities. We cater to the intricate national needs with an installed capacity of 5500 tons of finished products with in house value additions like aluminium extrusion manufacturing, anodizing processes, aluminium powder coating, various different types of dyes, etc.. 
+                        
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="C:\Users\Nandini\Desktop\Sem 3\WT\Ample Extrusion Website project\IMG-20241008-WA0041.jpg" alt="Aluminium Factory Image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container about-section">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="ae4.webp" alt="Industry Image">
+            </div>
+            <div class="col-md-6">
+                <h2 class="title">ABOUT INDUSTRY</h2>
+                <p class="content">
+                    Aluminium – the third most abundant element in the earth’s crust finds its implementation in many sectors due to its environment and user-friendly nature – in Building and Construction (B&C), power sector, automotive, packaging, household appliances etc. The surge in the demand of this youngest metal of the non-ferrous metal industry is indicated to the escalating infrastructural development of the country.
+                </p>
+                <p class="content">
+                    According to a recent issue of the European Journal of Business and Management, published by International Institute for Science, Technology and Education, the overall consumption of aluminium in India is projected to be about 10 million tonnes by 2020.
+                </p>
+                <p class="content">
+                    Aluminium is the second most used metal in the world after steel with an annual consumption of 88 Million Tonnes (including scrap). Aluminium consumption in India at 2.5 kg per capita is much below the global average of 11kg per capita. 
+                </p>
+            </div>
+        </div>
+    </div>
+   <!--Product-->
+    <div class="container mt-5">
+        <h2 class="mb-5" style="text-align: center;font-size: 60px;font-family: Arial, Helvetica, sans-serif;">Products</h2>
+        <div class="row text-center">
+          
+         
+          <div class="col-md-4">
+            <div class="product-card">
+              <div class="product-number">01</div>
+              <h3>Anodizing</h3>
+              <p>Anodizing is the electrolytic oxidation process in which the surface layer of metal is transformed for protection.</p>
+              <a href="Anodizing.html" class="read-more">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-card">
+              <div class="product-number">02</div>
+              <h3>Powder Coating</h3>
+              <p>Ample Extrusion offers comprehensive fabricating equipment including press brakes, shears, and lamination lines.</p>
+              <a href="PowderCoating.html" class="read-more">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-card">
+              <div class="product-number">03</div>
+              <h3>Machine Shop</h3>
+              <p>Ample Extrusion offers comprehensive Machine Shop services with CNCs, VMCs, and Drilling Machines.</p>
+              <a href="MachineShop.html" class="read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+      <!--Why Choose Us-->
+      <div class="container why-choose-us">
+        <h2 class="section-title">Why Choose Us?</h2>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="choose-card">
+              <div class="icon">🤝</div> <!-- Placeholder for icon -->
+              <h3>Preferred Partner</h3>
+              <p>We are one of the preferred aluminium extrusion manufacturers by companies across industries locally and nationally. <a href="#">Read More.</a></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="choose-card">
+              <div class="icon">💼</div> <!-- Placeholder for icon -->
+              <h3>Our Quality & Service</h3>
+              <p>Our quality is demonstrated at the basic step of the process, i.e. procuring aluminium raw material. <a href="#">Read More.</a></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="choose-card">
+              <div class="icon">🏭</div> <!-- Placeholder for icon -->
+              <h3>Our Facility</h3>
+              <p>We operate 2 advanced automated aluminium extrusion presses manufacturing unit which produces premium quality aluminium profiles. <a href="#">Read More.</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4 offset-md-2">
+            <div class="choose-card">
+              <div class="icon">📊</div> <!-- Placeholder for icon -->
+              <h3>Our Expertise</h3>
+              <p>Our manufacturing facilities are well-equipped with 11 aluminium extrusion presses with 1450 MT and 650 MT capacity per annum. <a href="#">Read More.</a></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="choose-card">
+              <div class="icon">🔧</div> <!-- Placeholder for icon -->
+              <h3>Our Custom Profiles</h3>
+              <p>Our high-end aluminium extrusion presses can produce 100% customization to meet client needs. We Cater Quality with utmost customer priority. <a href="#">Read More.</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4 offset-md-4">
+            <div class="choose-card">
+              <div class="icon">👥</div> <!-- Placeholder for icon -->
+              <h3>Our Team</h3>
+              <p>Our workforce has expertise to meet any aluminium extrusion profile requirements for our clients. <a href="#">Read More.</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--footer-->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 footer-logo">
+              <img src="amplelogo.png" alt="Ample Extrusion Logo"> <!-- Replace with actual logo -->
+              <p>Manufacturing Premium Quality Aluminium Profiles.</p>
+              <p>Contact Us: <br>
+                Tel: +91 91451 91452<br> email: ampleextrusion@gmail.com
+              </p>
+              
+            </div>
+    
+            <div class="col-md-4 quick-links">
+              <h5>Quick Links</h5>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="facility.html">Facility</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="AboutUS.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="LoginRegister.html">Register</a></li>
+                <li><a href="Login.html">Login</a></li>              </ul>
+            </div>
+    
+            <div class="col-md-4">
+              <h5>Get In Touch</h5>
+              <p>
+                Ample Extrusion is located at :<br>
+                Lajai Nasitpar Road, <br>
+                Tankara – 363650, <br>
+                Morbi, Gujarat. 
+              </p>
+              <div class="social-icons">
+                <a href="#"><i class="bi bi-youtube"></i></a> <!-- YouTube icon -->
+                <a href="#"><i class="bi bi-linkedin"></i></a> <!-- LinkedIn icon -->
+              </div>
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="col-12 copyright">
+              <p>Copyright © Ample Extrusion</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+  
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

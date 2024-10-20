@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ample Extrusion</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-custom {
+            background-color: #072471;
+            
+        }
+       
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(123, 157, 205, 0.441);
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-size:100px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        
+    .navbar-custom {
+    background-color: #1f70b8;
+    height: 130px; /* Increase the height */
+    padding: 20px 0; /* Adjust padding */
+}
+
+.navbar-brand {
+    font-size: 1.8rem; /* Increase brand text size */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem; /* Increase navigation link text size */
+    padding: 10px 15px; /* Adjust padding for better spacing */
+}
+
+.navbar-toggler {
+    font-size: 1rem; /* Increase size of the toggler icon */
+}
+
+.footer {
+      background-color: #0A2A47;
+      color: white;
+      padding: 40px 0;
+    }
+
+    .footer h5 {
+      color: #F5B800;
+      font-weight: bold;
+    }
+
+    .footer .footer-logo img {
+      max-width: 120px;
+      margin-bottom: 15px;
+    }
+
+    .footer p {
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .footer .quick-links ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .footer .quick-links ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer .quick-links ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer .quick-links ul li a:hover {
+      color: #F5B800;
+    }
+
+    .footer .social-icons a {
+      color: #F5B800;
+      font-size: 1.5rem;
+      margin-right: 10px;
+      text-decoration: none;
+    }
+
+    .footer .social-icons a:hover {
+      color: white;
+    }
+
+    .footer .copyright {
+      border-top: 1px solid #F5B800;
+      padding-top: 10px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    /* General styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero-section {
+      background-color: #0A2A47;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #F5B800;
+    }
+
+    .hero-section img {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+
+   
+
+    /* Content Section */
+    .content-section {
+      background-color: #fff;
+      padding: 50px 0;
+    }
+
+    .content-section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #0A2A47;
+      margin-bottom: 20px;
+    }
+
+    .content-section ul {
+      max-width: 900px;
+      margin: 0 auto;
+      padding-left: 20px;
+      list-style-type: disc;
+      color: #333;
+    }
+
+    .content-section ul li {
+      margin-bottom: 15px;
+    }
+
+    /* Footer Image */
+    .footer-image img {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+    .segment-card {
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .segment-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .segment-card h3 {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            margin: 0;
+            padding: 8px 0;
+            font-size: 1.25rem;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            border-radius: 0 0 10px 10px;
+        }
+
+      
+   
+  </style>
+
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="amplelogo.png" style="width: 260px; height:86px; margin-right:300px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Products.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="facility.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">Facility</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="technology.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">Technology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUS.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="LoginRegister.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">Register</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Login.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">Login</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Hero Section -->
+  <section class="hero-section">
+    
+    <h1>PRODUCTS</h1>
+    <img src="pro.webp" alt="Product Image" style="width: 90%;height: 50%;"> <!-- Replace with actual factory image -->
+  </section>
+
+  <!-- Content Section -->
+  <section class="content-section">
+    <div class="container">
+      <h2>We’re transforming the Indian Aluminium Industry</h2>
+      <ul>
+        <li>Ample Extrusion manufactures premium quality extrusions in different alloys with thickness ranging from 0.4mm to 125 mm and profile size varying from 4.0 mm to 300 mm subject to the alloys and other specifications. There are more than 50000 dies for 15000 different profiles.</li>
+        <li>Ample Extrusion provides fitting solutions for every conceivable and convincible need in every field, in different alloys from 1xxx series to 7xxx series and in M, O, T4, T5, T6 and T8 tempers.</li>
+        <li>The extrusions being manufactured in the plant are normally as per Indian standards.</li>
+      </ul>
+    </div>
+  </section>
+  <!--Main Content-->
+  <div id="main-content">
+    <h1 style="text-align: center;font-size: 60px;font-weight: 200;">OUR SEGMENTS</h1>
+    <div class="container">
+      
+      
+      <div class="row g-4 mt-4">
+          <div class="col-md-4">
+              <div class="segment-card">
+                  <img src="bc.png" alt="Building & Construction">
+                  <h3>BUILDING & CONSTRUCTION</h3>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="segment-card">
+                  <img src="td.png" alt="Transmission Distribution">
+                  <h3>TRANSMISSION DISTRIBUTION</h3>
+              </div>
+          </div><br><br><BR>
+          <div class="col-md-4">
+              <div class="segment-card">
+                  <img src="mo.png" alt="Medical Orthodontic Equipments">
+                  <h3>MEDICAL ORTHODONTIC EQUIPMENTS</h3>
+              </div>
+          </div> <br><br><br>
+          <div class="col-md-4">
+              <div class="segment-card">
+                  <img src="re.png" alt="Renewable Energy">
+                  <h3>RENEWABLE ENERGY</h3>
+              </div>
+          </div><br><br><br>
+          <div class="col-md-4">
+              <div class="segment-card">
+                  <img src="dw.png" alt="Technology">
+                  <h3>DOORS AND WINDOWS</h3>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="segment-card">
+                  <img src="ae.png" alt="Aviation">
+                  <h3>AVIATION</h3>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+   <br><br><br><br>
+  <!-- Footer Image Section -->
+  <section class="footer-image">
+    <img src="productfooter.webp" alt="Industrial Layout Image"> <!-- Replace with actual footer image -->
+  </section>
+
+     <!--footer-->
+     <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 footer-logo">
+              <img src="amplelogo.png" alt="Ample Extrusion Logo"> <!-- Replace with actual logo -->
+              <p>Manufacturing Premium Quality Aluminium Profiles.</p>
+              <p>Contact Us: <br>
+                Tel: +91 91451 91452<br> email: ampleextrusion@gmail.com
+              </p>
+              
+            </div>
+    
+            <div class="col-md-4 quick-links">
+              <h5>Quick Links</h5>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="facility.html">Facility</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="AboutUS.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="LoginRegister.html">Register</a></li>
+                <li><a href="Login.html">Login</a></li>
+              </ul>
+            </div>
+    
+            <div class="col-md-4">
+              <h5>Get In Touch</h5>
+              <p>
+                Ample Extrusion is located at :<br>
+                Lajai Nasitpar Road, <br>
+                Tankara – 363650, <br>
+                Morbi, Gujarat. 
+              </p>
+              <div class="social-icons">
+                <a href="#"><i class="bi bi-youtube"></i></a> <!-- YouTube icon -->
+                <a href="#"><i class="bi bi-linkedin"></i></a> <!-- LinkedIn icon -->
+              </div>
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="col-12 copyright">
+              <p>Copyright © Ample Extrusion</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+   <!-- Bootstrap JS, Popper.js, and jQuery -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

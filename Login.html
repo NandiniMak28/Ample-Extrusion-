@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ample Extrusion</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-custom {
+            background-color: #072471;
+            
+        }
+        .hero-image {
+           background-image:url('cu.jpg');
+            height: 75vh;
+            background-size: cover;
+            background-position: center;
+            position:relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(123, 157, 205, 0.441);
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-size:100px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        
+    .navbar-custom {
+    background-color: #1f70b8;
+    height: 130px; /* Increase the height */
+    padding: 20px 0; /* Adjust padding */
+}
+
+.navbar-brand {
+    font-size: 1.8rem; /* Increase brand text size */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem; /* Increase navigation link text size */
+    padding: 10px 15px; /* Adjust padding for better spacing */
+}
+
+.navbar-toggler {
+    font-size: 1rem; /* Increase size of the toggler icon */
+}
+.footer {
+      background-color: #0A2A47;
+      color: white;
+      padding: 40px 0;
+    }
+
+    .footer h5 {
+      color: #F5B800;
+      font-weight: bold;
+    }
+
+    .footer .footer-logo img {
+      max-width: 120px;
+      margin-bottom: 15px;
+    }
+
+    .footer p {
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .footer .quick-links ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .footer .quick-links ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer .quick-links ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer .quick-links ul li a:hover {
+      color: #F5B800;
+    }
+
+    .footer .social-icons a {
+      color: #F5B800;
+      font-size: 1.5rem;
+      margin-right: 10px;
+      text-decoration: none;
+    }
+
+    .footer .social-icons a:hover {
+      color: white;
+    }
+
+    .footer .copyright {
+      border-top: 1px solid #F5B800;
+      padding-top: 10px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/*Login*/
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-left: 38%;
+    
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+    </head>
+   <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="amplelogo.png" style="width: 260px; height:86px; margin-right:300px;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Products.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="facility.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">Facility</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="technology.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">Technology</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="AboutUS.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="LoginRegister.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">Register</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Login.html" style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">Login</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br><br><BR><BR><BR>
+       <!--LOGIN-->
+<div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm" onsubmit="return validateForm()">
+        <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email">
+        </div>
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</div>
+<script>
+    function validateForm() {
+    // Get form values
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+
+    // Regular expression for email validation
+    var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    // Check if email or password is empty
+    if (email === "" || password === "") {
+        alert("Both email and password are required.");
+        return false;
+    }
+
+    // Check if email is valid
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+    }
+
+    // Check if password meets the minimum length requirement
+    if (password.length < 6) {
+        alert("Password must be at least 6 characters long.");
+        return false;
+    }
+
+    // Form is valid
+    alert("Login successful!");
+    return true;
+}
+
+</script>
+
+<br><BR><BR><BR><BR>
+    
+ <!--footer-->
+ <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-logo">
+          <img src="amplelogo.png" alt="Ample Extrusion Logo"> <!-- Replace with actual logo -->
+          <p>Manufacturing Premium Quality Aluminium Profiles.</p>
+          <p>Contact Us: <br>
+            Tel: +91 91451 91452<br> email: ampleextrusion@gmail.com
+          </p>
+          
+        </div>
+
+        <div class="col-md-4 quick-links">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="facility.html">Facility</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="AboutUS.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="LoginRegister.html">Register</a></li>
+            <li><a href="Login.html">Login</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h5>Get In Touch</h5>
+          <p>
+            Ample Extrusion is located at :<br>
+            Lajai Nasitpar Road, <br>
+            Tankara – 363650, <br>
+            Morbi, Gujarat. 
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-youtube"></i></a> <!-- YouTube icon -->
+            <a href="#"><i class="bi bi-linkedin"></i></a> <!-- LinkedIn icon -->
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 copyright">
+          <p>Copyright © Ample Extrusion</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
